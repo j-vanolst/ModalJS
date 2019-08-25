@@ -1,0 +1,15 @@
+/* green color: #6aff17 */
+
+nav img {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+nav a {
+  font-size: 30px;
+}
+#content {
+  padding-top: 50px;
+  /* border-left-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid; */
+}
