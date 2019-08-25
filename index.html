@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>ModalJS</title>
+    <title>modal.js</title>
     <!-- JQuery -->
     <script src="scripts/jquery-3.4.1.min.js"></script>
     <!-- Popper.js -->
@@ -12,7 +12,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- Tone.js -->
     <script src="scripts/Tone.js"></script>
-
+    <!-- My scripts -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="scripts/script.js"></script>
   </head>
@@ -47,11 +47,35 @@
     <div id="content" class="container">
       <h1>Welcome to modal.js</h1>
       <p>
-        modal.js is an interactive multimedia application designed to inform people about the various musical modes.
-        This application will look at the seven modes of the major scale - the musical scale most people are familiar with.
+        modal.js is an interactive multimedia application designed to teach people about the various musical modes.
+        This application will look at the modes of the major scale - the musical scale most people are familiar with.
         <br>
-        
+        <br>
+        A musical mode is a unique combination of notes with a distinct 'flavour' that characterizes the feeling or sound
+        of a musical piece.
+        <br>
+        <br>
+        The seven modes of the major scale are as follows:
+        <ul>
+          <li><a href="#">Ionian</a></li>
+          <li><a href="#">Dorian</a></li>
+          <li><a href="#">Phrygian</a></li>
+          <li><a href="#">Lydian</a></li>
+          <li><a href="#">Mixolydian</a></li>
+          <li><a href="#">Aeolian</a></li>
+          <li><a href="#">Locrian</a></li>
+        </ul>
+        <br>
+        You can click on a mode from the list to learn more about it or you can navigate through the site using the
+        navigation menu.
+        <br>
+        The <a href="#">try it out</a> page has an interactive piano/keyboard where you can apply ideas you
+        may have learned from the information pages.
       </p>
+      <button id="test">Test</button>
+      <tone-demo>
+        <tone-play-toggle></tone-play-toggle>
+      </tone-demo>
     </div>
   </body>
 </html>
