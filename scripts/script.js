@@ -14,7 +14,7 @@ Maj: Maj 3rd + Min 3rd
 Min: Min 3rd + Maj 3rd
 Dim: Min 3rd + Min 3rd
  */
- 
+
  /*Chord progression will be I vi IV V in each mode
 Ionian: I vi IV V
 Dorian: i vi(dim) iv V
@@ -64,14 +64,28 @@ var ionianChords = new Tone.Part(function(time, event){
 var arpeggio = new Tone.Pattern(function(time, note){
   synth.triggerAttackRelease(note, '8n');
 }, dorian, 'upDown')
+var test = new Tone.Part(function(time, event){
+  pad.triggerAttackRelease(event.note, event.dur, time)
+},
+[
+  {time: '1:0:0', note: ['C4', 'G4'], dur: '1m'},
+  {time: '2:0:0', note: ['A4', 'E4'], dur: '1m'},
+  {time: '3:0:0', note: ['F4', 'C4'], dur: '1m'},
+  {time: '4:0:0', note: ['G4', 'D4'], dur: '1m'},
+])
 
 $(document).ready(function() {
   //ionian()
   // ionianChords.start(0)
   // ionianChords.loop = 2
   // ionianChords.loopEnd = '4m'
-  arpeggio.start(0)
+  //test.start(0)
+  test.start(0)
+  //test.loop = 2
+  //test.loopEnd = '4m'
   Tone.Transport.start(0)
+  //arpeggio.start(0)
+  //Tone.Transport.start(0)
   document.getElementById('test').addEventListener('click', function() {
     arpeggio.stop()
   })
